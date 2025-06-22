@@ -17,8 +17,8 @@ export default function Home() {
       </div>
       <main className="flex-1">
         <HeroSection />
-        <FeaturesSection />
         <TestimonialsSection />
+        <FeaturesSection />
         <ProofSection />
         <PricingSection />
         <FaqSection />
