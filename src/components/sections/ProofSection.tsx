@@ -1,4 +1,5 @@
 import { BadgeCheck } from "lucide-react";
+import Image from "next/image";
 
 const journals = [
   "Journal of Nutritional Biochemistry",
@@ -28,6 +29,16 @@ export function ProofSection() {
               </div>
             ))}
           </div>
+        </div>
+        <div className="mt-16 flex justify-center">
+          <Image
+            src="https://placehold.co/730x1368.png"
+            alt="Prova social de resultado"
+            width={730}
+            height={1368}
+            className="rounded-xl shadow-2xl max-w-full h-auto"
+            data-ai-hint="testimonial screenshot"
+          />
         </div>
       </div>
     </section>
