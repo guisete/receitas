@@ -21,8 +21,7 @@ const testimonials = [
     title: "A melhor decisão que tomei",
     quote:
       "Com a rotina corrida, eu precisava de algo fácil de seguir. O SlimForm se encaixou perfeitamente. Perdi a barriga que tanto me incomodava e ganhei muita disposição.",
-    proofImage: "https://placehold.co/400x225.png",
-    proofImageAiHint: "fitness progress chart",
+    proofImage: "https://i.imgur.com/B1YwxRF.png",
   },
 ];
 
@@ -56,7 +55,6 @@ export function TestimonialsSection() {
                       width={400}
                       height={225}
                       className="rounded-lg shadow-md w-full h-auto object-cover"
-                      data-ai-hint={testimonial.proofImageAiHint}
                     />
                 </div>
               </CardContent>
