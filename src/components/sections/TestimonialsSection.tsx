@@ -10,7 +10,7 @@ const testimonials = [
     title: "Nunca me senti tão bem!",
     quote:
       "Eu não acreditava que poderia emagrecer comendo bem, mas o SlimForm mudou tudo! Perdi 8kg em um mês e nunca me senti tão bem. As receitas são incríveis!",
-    proofImage: "https://placehold.co/400x300.png",
+    proofImage: "https://placehold.co/400x225.png",
     proofImageAiHint: "before after photo",
   },
   {
@@ -20,7 +20,7 @@ const testimonials = [
     title: "Simplesmente funciona",
     quote:
       "Estava cansada de dietas que não davam resultado. O SlimForm é diferente. É prático, as comidas são deliciosas e os resultados apareceram rápido. Recomendo demais!",
-    proofImage: "https://placehold.co/400x300.png",
+    proofImage: "https://placehold.co/400x225.png",
     proofImageAiHint: "healthy meal plan",
   },
   {
@@ -30,7 +30,7 @@ const testimonials = [
     title: "A melhor decisão que tomei",
     quote:
       "Com a rotina corrida, eu precisava de algo fácil de seguir. O SlimForm se encaixou perfeitamente. Perdi a barriga que tanto me incomodava e ganhei muita disposição.",
-    proofImage: "https://placehold.co/400x300.png",
+    proofImage: "https://placehold.co/400x225.png",
     proofImageAiHint: "fitness progress chart",
   },
 ];
@@ -69,7 +69,7 @@ export function TestimonialsSection() {
                       src={testimonial.proofImage}
                       alt={`Prova social do depoimento de ${testimonial.name}`}
                       width={400}
-                      height={300}
+                      height={225}
                       className="rounded-lg shadow-md w-full h-auto object-cover"
                       data-ai-hint={testimonial.proofImageAiHint}
                     />
