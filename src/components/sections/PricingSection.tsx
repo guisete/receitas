@@ -106,7 +106,7 @@ export function PricingSection() {
               <Button
                 asChild
                 size="lg"
-                className="w-full mt-8 font-extrabold text-lg py-7"
+                className="w-full mt-8 font-extrabold text-lg py-7 h-auto whitespace-normal"
               >
                 <a href="#">
                   SIM, QUERO ACESSO IMEDIATO!
