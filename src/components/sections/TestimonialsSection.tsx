@@ -1,12 +1,9 @@
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
 
 const testimonials = [
   {
     name: "Maria S.",
-    image: "https://placehold.co/100x100.png",
-    aiHint: "woman smiling",
     title: "Nunca me senti tão bem!",
     quote:
       "Eu não acreditava que poderia emagrecer comendo bem, mas o SlimForm mudou tudo! Perdi 8kg em um mês e nunca me senti tão bem. As receitas são incríveis!",
@@ -14,8 +11,6 @@ const testimonials = [
   },
   {
     name: "Juliana P.",
-    image: "https://placehold.co/100x100.png",
-    aiHint: "woman portrait",
     title: "Simplesmente funciona",
     quote:
       "Estava cansada de dietas que não davam resultado. O SlimForm é diferente. É prático, as comidas são deliciosas e os resultados apareceram rápido. Recomendo demais!",
@@ -24,8 +19,6 @@ const testimonials = [
   },
   {
     name: "Carla F.",
-    image: "https://placehold.co/100x100.png",
-    aiHint: "happy woman",
     title: "A melhor decisão que tomei",
     quote:
       "Com a rotina corrida, eu precisava de algo fácil de seguir. O SlimForm se encaixou perfeitamente. Perdi a barriga que tanto me incomodava e ganhei muita disposição.",
@@ -50,15 +43,9 @@ export function TestimonialsSection() {
           {testimonials.map((testimonial, index) => (
             <Card key={index} className="shadow-lg transform hover:scale-105 transition-transform duration-300 flex flex-col">
               <CardContent className="p-6 flex flex-col flex-grow">
-                <div className="flex items-center mb-4">
-                  <Avatar className="h-14 w-14">
-                    <AvatarImage src={testimonial.image} alt={testimonial.name} data-ai-hint={testimonial.aiHint} />
-                    <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
-                  </Avatar>
-                  <div className="ml-4">
-                    <p className="text-lg font-bold font-headline">{testimonial.name}</p>
-                    <p className="text-sm text-primary font-semibold">{testimonial.title}</p>
-                  </div>
+                <div className="mb-4">
+                  <p className="text-lg font-bold font-headline">{testimonial.name}</p>
+                  <p className="text-sm text-primary font-semibold">{testimonial.title}</p>
                 </div>
                 <blockquote className="text-base text-muted-foreground italic border-l-4 border-primary pl-4 flex-grow">
                   "{testimonial.quote}"
