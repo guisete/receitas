@@ -10,8 +10,7 @@ const testimonials = [
     title: "Nunca me senti tão bem!",
     quote:
       "Eu não acreditava que poderia emagrecer comendo bem, mas o SlimForm mudou tudo! Perdi 8kg em um mês e nunca me senti tão bem. As receitas são incríveis!",
-    proofImage: "https://placehold.co/400x225.png",
-    proofImageAiHint: "before after photo",
+    proofImage: "https://i.imgur.com/f7JOEfb.png",
   },
   {
     name: "Juliana P.",
