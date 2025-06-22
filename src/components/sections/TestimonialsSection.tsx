@@ -10,6 +10,8 @@ const testimonials = [
     title: "Nunca me senti tão bem!",
     quote:
       "Eu não acreditava que poderia emagrecer comendo bem, mas o SlimForm mudou tudo! Perdi 8kg em um mês e nunca me senti tão bem. As receitas são incríveis!",
+    proofImage: "https://placehold.co/400x300.png",
+    proofImageAiHint: "before after photo",
   },
   {
     name: "Juliana P.",
@@ -18,6 +20,8 @@ const testimonials = [
     title: "Simplesmente funciona",
     quote:
       "Estava cansada de dietas que não davam resultado. O SlimForm é diferente. É prático, as comidas são deliciosas e os resultados apareceram rápido. Recomendo demais!",
+    proofImage: "https://placehold.co/400x300.png",
+    proofImageAiHint: "healthy meal plan",
   },
   {
     name: "Carla F.",
@@ -26,6 +30,8 @@ const testimonials = [
     title: "A melhor decisão que tomei",
     quote:
       "Com a rotina corrida, eu precisava de algo fácil de seguir. O SlimForm se encaixou perfeitamente. Perdi a barriga que tanto me incomodava e ganhei muita disposição.",
+    proofImage: "https://placehold.co/400x300.png",
+    proofImageAiHint: "fitness progress chart",
   },
 ];
 
@@ -43,8 +49,8 @@ export function TestimonialsSection() {
         </div>
         <div className="mt-12 grid gap-8 md:grid-cols-1 lg:grid-cols-3">
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className="shadow-lg transform hover:scale-105 transition-transform duration-300">
-              <CardContent className="p-6">
+            <Card key={index} className="shadow-lg transform hover:scale-105 transition-transform duration-300 flex flex-col">
+              <CardContent className="p-6 flex flex-col flex-grow">
                 <div className="flex items-center mb-4">
                   <Avatar className="h-14 w-14">
                     <AvatarImage src={testimonial.image} alt={testimonial.name} data-ai-hint={testimonial.aiHint} />
@@ -55,22 +61,22 @@ export function TestimonialsSection() {
                     <p className="text-sm text-primary font-semibold">{testimonial.title}</p>
                   </div>
                 </div>
-                <blockquote className="text-base text-muted-foreground italic border-l-4 border-primary pl-4">
+                <blockquote className="text-base text-muted-foreground italic border-l-4 border-primary pl-4 flex-grow">
                   "{testimonial.quote}"
                 </blockquote>
+                <div className="mt-4">
+                   <Image
+                      src={testimonial.proofImage}
+                      alt={`Prova social do depoimento de ${testimonial.name}`}
+                      width={400}
+                      height={300}
+                      className="rounded-lg shadow-md w-full h-auto object-cover"
+                      data-ai-hint={testimonial.proofImageAiHint}
+                    />
+                </div>
               </CardContent>
             </Card>
           ))}
-        </div>
-        <div className="mt-16 flex justify-center">
-          <Image
-            src="https://placehold.co/730x1368.png"
-            alt="Prova social de resultado"
-            width={730}
-            height={1368}
-            className="rounded-xl shadow-2xl max-w-full h-auto"
-            data-ai-hint="testimonial screenshot"
-          />
         </div>
       </div>
     </section>
