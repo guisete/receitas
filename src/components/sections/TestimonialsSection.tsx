@@ -14,8 +14,7 @@ const testimonials = [
     title: "Simplesmente funciona",
     quote:
       "Estava cansada de dietas que não davam resultado. O SlimForm é diferente. É prático, as comidas são deliciosas e os resultados apareceram rápido. Recomendo demais!",
-    proofImage: "https://placehold.co/400x225.png",
-    proofImageAiHint: "healthy meal plan",
+    proofImage: "https://i.imgur.com/KESN1aI.png",
   },
   {
     name: "Carla F.",
