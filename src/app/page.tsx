@@ -11,8 +11,10 @@ import { UrgencyBanner } from "@/components/UrgencyBanner";
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
-      <UrgencyBanner />
-      <LandingHeader />
+      <div className="sticky top-0 z-50">
+        <LandingHeader />
+        <UrgencyBanner />
+      </div>
       <main className="flex-1">
         <HeroSection />
         <FeaturesSection />
