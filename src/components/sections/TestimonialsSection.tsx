@@ -48,15 +48,17 @@ export function TestimonialsSection() {
                 <blockquote className="text-base text-muted-foreground italic border-l-4 border-primary pl-4 flex-grow">
                   "{testimonial.quote}"
                 </blockquote>
-                <div className="mt-4">
-                   <Image
-                      src={testimonial.proofImage}
-                      alt={`Prova social do depoimento de ${testimonial.name}`}
-                      width={400}
-                      height={225}
-                      className="rounded-lg shadow-md w-full h-auto object-cover"
-                    />
-                </div>
+                {testimonial.proofImage && (
+                  <div className="mt-4">
+                    <Image
+                        src={testimonial.proofImage}
+                        alt={`Prova social do depoimento de ${testimonial.name}`}
+                        width={400}
+                        height={225}
+                        className="rounded-lg shadow-md w-full h-auto object-cover"
+                      />
+                  </div>
+                )}
               </CardContent>
             </Card>
           ))}

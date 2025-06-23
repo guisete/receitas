@@ -10,9 +10,7 @@ export function HeroSection() {
             Funcionam?
           </h1>
           <p className="mt-4 text-lg text-muted-foreground sm:mt-5 sm:text-xl">
-            Descubra o segredo para emagrecer comendo o que você gosta. Nossa
-            receita exclusiva já ajudou milhares de mulheres a transformar o
-            corpo e a vida. Seja a próxima!
+          Cansada de dietas que não dão certo? Eu já estive no seu lugar, até encontrar uma forma deliciosa de emagrecer de verdade! Vou te ensinar a perder peso rápido, sem sofrimento, com receitas incríveis que vão te fazer sentir prazer no processo. Eu sei que pode ser frustrante, mas a transformação está bem mais perto do que você imagina. Vamos juntas conquistar o corpo dos seus sonhos de forma leve e gostosa!
           </p>
           <div className="mt-8 flex items-center justify-center">
             <div className="flex items-center text-yellow-500">
