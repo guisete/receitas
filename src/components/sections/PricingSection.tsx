@@ -3,13 +3,15 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Check, ArrowRight, Timer } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 const includedFeatures = [
-  "Livro de Receitas Ana Receitas (PDF)",
-  "Guia de Planejamento Semanal",
-  "Bônus: Lista de Compras Inteligente",
-  "Bônus: Guia de Sucos Detox",
-  "Acesso Vitalício e Atualizações Gratuitas",
+  { text: "15 Receitas para Queima Rápida de Gordura", highlight: true },
+  { text: "Guia de Planejamento Semanal", highlight: false },
+  { text: "Bônus: Lista de Compras Inteligente", highlight: false },
+  { text: "Bônus: Guia Profissional de Sucos Detox", highlight: true },
+  { text: "Acesso Vitalício e Atualizações Gratuitas", highlight: false },
+  { text: "Garantia 30 de dias", highlight: false },
 ];
 
 export function PricingSection() {
@@ -90,15 +92,20 @@ export function PricingSection() {
               </h3>
               <ul role="list" className="mt-6 space-y-4">
                 {includedFeatures.map((feature) => (
-                  <li key={feature} className="flex items-start">
+                  <li key={feature.text} className="flex items-start">
                     <div className="flex-shrink-0">
                       <Check
                         className="h-6 w-6 text-green-500"
                         aria-hidden="true"
                       />
                     </div>
-                    <p className="ml-3 text-base text-muted-foreground">
-                      {feature}
+                    <p
+                      className={cn(
+                        "ml-3 text-base text-muted-foreground",
+                        feature.highlight && "font-bold text-card-foreground"
+                      )}
+                    >
+                      {feature.text}
                     </p>
                   </li>
                 ))}
