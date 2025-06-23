@@ -57,8 +57,8 @@ export function HeroCarousel() {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="left-2 sm:-left-12" />
-        <CarouselNext className="right-2 sm:-right-12" />
+        <CarouselPrevious className="left-2 sm:-left-12 opacity-50 hover:opacity-100 transition-opacity" />
+        <CarouselNext className="right-2 sm:-right-12 opacity-50 hover:opacity-100 transition-opacity" />
       </Carousel>
     )
 }
