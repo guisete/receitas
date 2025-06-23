@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Check, ArrowRight, Timer } from "lucide-react";
 
 const includedFeatures = [
-  "Livro de Receitas SlimForm (PDF)",
+  "Livro de Receitas Ana Receitas (PDF)",
   "Guia de Planejamento Semanal",
   "Bônus: Lista de Compras Inteligente",
   "Bônus: Guia de Sucos Detox",

@@ -28,7 +28,7 @@ export function FeaturesSection() {
             Chega de sofrer para emagrecer.
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            Com SlimForm, você vai descobrir o prazer de se alimentar bem e ver os resultados no espelho.
+            Com Ana Receitas, você vai descobrir o prazer de se alimentar bem e ver os resultados no espelho.
           </p>
         </div>
         <div className="mt-12 grid gap-8 md:grid-cols-3">
