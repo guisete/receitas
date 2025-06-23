@@ -1,0 +1,64 @@
+"use client"
+
+import * as React from "react"
+import Autoplay from "embla-carousel-autoplay"
+import Image from "next/image"
+
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
+import { Card, CardContent } from "@/components/ui/card"
+
+const images = [
+  { src: "https://placehold.co/600x400.png", alt: "Delicious and healthy food 1", hint: "healthy food" },
+  { src: "https://placehold.co/600x400.png", alt: "Delicious and healthy food 2", hint: "salad plate" },
+  { src: "https://placehold.co/600x400.png", alt: "Delicious and healthy food 3", hint: "meal prep" },
+  { src: "https://placehold.co/600x400.png", alt: "Delicious and healthy food 4", hint: "woman fitness" },
+  { src: "https://placehold.co/600x400.png", alt: "Delicious and healthy food 5", hint: "healthy ingredients" },
+]
+
+export function HeroCarousel() {
+    const plugin = React.useRef(
+        Autoplay({ delay: 2000, stopOnInteraction: true })
+    )
+    
+    return (
+        <Carousel
+            plugins={[plugin.current]}
+            className="w-full max-w-xs sm:max-w-xl md:max-w-2xl lg:max-w-4xl mx-auto mt-8"
+            onMouseEnter={plugin.current.stop}
+            onMouseLeave={plugin.current.reset}
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+        >
+        <CarouselContent>
+          {images.map((image, index) => (
+            <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+              <div className="p-1">
+                <Card>
+                  <CardContent className="flex aspect-video items-center justify-center p-0 overflow-hidden rounded-lg">
+                    <Image
+                      src={image.src}
+                      alt={image.alt}
+                      width={600}
+                      height={400}
+                      data-ai-hint={image.hint}
+                      className="w-full h-full object-cover"
+                    />
+                  </CardContent>
+                </Card>
+              </div>
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+        <CarouselPrevious className="hidden sm:flex" />
+        <CarouselNext className="hidden sm:flex" />
+      </Carousel>
+    )
+}

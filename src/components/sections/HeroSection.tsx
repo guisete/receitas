@@ -1,4 +1,5 @@
 import { Star } from "lucide-react";
+import { HeroCarousel } from "./HeroCarousel";
 
 export function HeroSection() {
   return (
@@ -11,7 +12,8 @@ export function HeroSection() {
           <p className="mt-4 text-lg text-muted-foreground sm:mt-5 sm:text-xl">
           Eu já estive no seu lugar, até encontrar uma forma deliciosa de emagrecer de verdade! Vou te ensinar a perder peso rápido, sem sofrimento, com receitas incríveis que vão te fazer sentir prazer no processo. Eu sei que pode ser frustrante, mas a transformação está bem mais perto do que você imagina. Vamos juntas conquistar o corpo dos seus sonhos de forma leve e gostosa!
           </p>
-          <div className="mt-8 flex items-center justify-center">
+          <HeroCarousel />
+          <div className="mt-12 flex items-center justify-center">
             <div className="flex items-center text-yellow-500">
               {[...Array(5)].map((_, i) => (
                 <Star key={i} className="h-5 w-5 fill-current" />
