@@ -12,7 +12,7 @@ export function Logo() {
         className="h-12 w-12"
       />
       <span className="text-3xl font-extrabold tracking-tight text-foreground font-headline">
-        Ana Receitas
+        Ana <span className="text-primary">Receitas</span>
       </span>
     </div>
   );
