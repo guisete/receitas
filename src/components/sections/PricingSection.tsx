@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Check, ArrowRight, Timer } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { Badge } from "@/components/ui/badge";
 
 const includedFeatures = [
   { text: "15 Receitas para Queima Rápida de Gordura", highlight: true },
@@ -52,10 +53,15 @@ export function PricingSection() {
         <div className="bg-accent rounded-2xl shadow-xl p-8 lg:p-12">
           <div className="lg:grid lg:grid-cols-2 lg:gap-12 lg:items-center">
             <div className="text-center lg:text-left">
-              <h2 className="text-3xl font-extrabold sm:text-4xl font-headline text-accent-foreground">
-                Sua <span className="text-primary">Transformação</span> Começa
-                Agora!
-              </h2>
+              <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 justify-center lg:justify-start">
+                <h2 className="text-3xl font-extrabold sm:text-4xl font-headline text-accent-foreground">
+                  Sua <span className="text-primary">Transformação</span> Começa
+                  Agora!
+                </h2>
+                <Badge variant="destructive" className="text-base font-bold py-1 px-3 self-center sm:self-auto -rotate-3">
+                  70% OFF HOJE
+                </Badge>
+              </div>
               <p className="mt-4 text-lg text-accent-foreground/80">
                 Acesso imediato a tudo que você precisa para conquistar o corpo
                 dos seus sonhos de uma vez por todas.
