@@ -75,13 +75,13 @@ export function PricingSection() {
 
               <div className="mt-8 flex flex-col items-center lg:items-start">
                 <p className="text-accent-foreground/70 text-lg">
-                  De <span className="line-through">R$97,00</span> por apenas:
+                  De <span className="line-through">R$59,00</span> por apenas:
                 </p>
                 <p className="font-headline text-5xl sm:text-6xl font-extrabold text-primary">
-                  12x R$2,90
+                  R$17,90
                 </p>
                 <p className="text-accent-foreground/70 mt-1">
-                  ou R$29,90 à vista
+                  ou 12x de R$2,90
                 </p>
               </div>
             </div>
