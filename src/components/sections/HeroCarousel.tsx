@@ -17,7 +17,7 @@ const images = [
   { src: "https://i.imgur.com/P2P9bTp.jpeg", alt: "Mulher feliz comendo uma salada saudável", hint: "woman salad" },
   { src: "https://i.imgur.com/mjZNmdN.jpeg", alt: "Prato saudável com salmão e vegetais", hint: "healthy meal" },
   { src: "https://i.imgur.com/65ITLTz.jpeg", alt: "Mulher medindo a cintura feliz com os resultados", hint: "woman waist" },
-  { src: "https://placehold.co/600x400.png", alt: "Delicious and healthy food 4", hint: "woman fitness" },
+  { src: "https://i.imgur.com/0TPrdCw.jpeg", alt: "Resultado de antes e depois de uma cliente", hint: "before after" },
   { src: "https://placehold.co/600x400.png", alt: "Delicious and healthy food 5", hint: "healthy ingredients" },
 ]
 
