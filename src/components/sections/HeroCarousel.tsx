@@ -15,7 +15,7 @@ import { Card, CardContent } from "@/components/ui/card"
 
 const images = [
   { src: "https://i.imgur.com/P2P9bTp.jpeg", alt: "Mulher feliz comendo uma salada saudável", hint: "woman salad" },
-  { src: "https://i.imgur.com/mjZNmdN.jpeg", alt: "Prato saudável com salmão e vegetais", hint: "healthy meal" },
+  { src: "https://i.imgur.com/0TPrdCw.jpeg", alt: "Mulher sorrindo medindo a cintura", hint: "woman measuring" },
 ]
 
 export function HeroCarousel() {
