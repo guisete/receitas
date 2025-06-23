@@ -14,7 +14,7 @@ import {
 import { Card, CardContent } from "@/components/ui/card"
 
 const images = [
-  { src: "https://placehold.co/600x400.png", alt: "Delicious and healthy food 1", hint: "healthy food" },
+  { src: "https://i.imgur.com/P2P9bTp.jpeg", alt: "Mulher feliz comendo uma salada saudável", hint: "woman salad" },
   { src: "https://placehold.co/600x400.png", alt: "Delicious and healthy food 2", hint: "salad plate" },
   { src: "https://placehold.co/600x400.png", alt: "Delicious and healthy food 3", hint: "meal prep" },
   { src: "https://placehold.co/600x400.png", alt: "Delicious and healthy food 4", hint: "woman fitness" },
