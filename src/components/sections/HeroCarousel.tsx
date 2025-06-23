@@ -14,8 +14,9 @@ import {
 import { Card, CardContent } from "@/components/ui/card"
 
 const images = [
-  { src: "https://i.imgur.com/P2P9bTp.jpeg", alt: "Mulher feliz comendo uma salada saudável", hint: "woman salad" },
-  { src: "https://i.imgur.com/fdABaTB.jpeg", alt: "Prato de comida saudável e colorida", hint: "healthy food" },
+  { src: "https://placehold.co/600x400.png", alt: "Prato de comida saudável e colorida", hint: "healthy food" },
+  { src: "https://placehold.co/600x400.png", alt: "Mulher feliz comendo uma salada saudável", hint: "woman salad" },
+  { src: "https://placehold.co/600x400.png", alt: "Ingredientes frescos para receita", hint: "fresh ingredients" },
 ]
 
 export function HeroCarousel() {
