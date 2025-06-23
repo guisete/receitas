@@ -81,7 +81,7 @@ export function PricingSection() {
                   R$17,90
                 </p>
                 <p className="text-accent-foreground/70 mt-1">
-                  ou 12x de R$2,90
+                  ou 3x de R$5,97
                 </p>
               </div>
             </div>
