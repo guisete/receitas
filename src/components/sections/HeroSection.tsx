@@ -1,5 +1,21 @@
+"use client";
+
 import { Star } from "lucide-react";
-import { HeroCarousel } from "./HeroCarousel";
+import dynamic from 'next/dynamic';
+import { Skeleton } from "@/components/ui/skeleton";
+
+const HeroCarousel = dynamic(() => import('./HeroCarousel').then(mod => mod.HeroCarousel), {
+  ssr: false,
+  loading: () => (
+    <div className="w-full max-w-xs sm:max-w-xl md:max-w-2xl lg:max-w-4xl mx-auto mt-8 relative">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-12">
+        <Skeleton className="h-48 w-full rounded-lg" />
+        <Skeleton className="h-48 w-full rounded-lg hidden md:block" />
+        <Skeleton className="h-48 w-full rounded-lg hidden lg:block" />
+      </div>
+    </div>
+  ),
+});
 
 export function HeroSection() {
   return (
