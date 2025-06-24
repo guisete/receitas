@@ -1,7 +1,6 @@
-
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { LiveSalesNotification } from "./LiveSalesNotification";
 
 const names = [
@@ -21,38 +20,38 @@ const getRandomTime = (min: number, max: number) => Math.floor(Math.random() * (
 export function SalesNotifier() {
   const [isVisible, setIsVisible] = useState(false);
   const [message, setMessage] = useState("");
+  const timeouts = useRef<NodeJS.Timeout[]>([]);
 
   useEffect(() => {
-    let notificationTimeout: NodeJS.Timeout;
-
     const showNotification = () => {
       const randomName = getRandomElement(names);
       const randomMessageFunc = getRandomElement(messages);
       setMessage(randomMessageFunc(randomName));
       setIsVisible(true);
 
-      notificationTimeout = setTimeout(() => {
+      const hideTimeout = setTimeout(() => {
         setIsVisible(false);
-      }, 5000); // Visible for 5 seconds
+      }, 5000);
+      timeouts.current.push(hideTimeout);
     };
     
     const scheduleNextNotification = () => {
-        const nextTime = getRandomTime(8, 20); // Schedule next notification between 8-20 seconds
-        setTimeout(() => {
+        const nextTime = getRandomTime(8, 20);
+        const scheduleTimeout = setTimeout(() => {
             showNotification();
             scheduleNextNotification();
-        }, nextTime)
+        }, nextTime);
+        timeouts.current.push(scheduleTimeout);
     }
 
     const initialTimeout = setTimeout(() => {
         showNotification();
         scheduleNextNotification();
     }, 7000);
-
+    timeouts.current.push(initialTimeout);
 
     return () => {
-      clearTimeout(initialTimeout);
-      clearTimeout(notificationTimeout);
+      timeouts.current.forEach(clearTimeout);
     };
   }, []);
 
