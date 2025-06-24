@@ -5,6 +5,7 @@ import { FeaturesSection } from "@/components/sections/FeaturesSection";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { PricingSection } from "@/components/sections/PricingSection";
 import { UrgencyBanner } from "@/components/UrgencyBanner";
+import { SalesNotifier } from "@/components/SalesNotifier";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <PricingSection />
       </main>
       <LandingFooter />
+      <SalesNotifier />
     </div>
   );
 }
