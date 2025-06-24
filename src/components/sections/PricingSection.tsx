@@ -81,13 +81,13 @@ export function PricingSection() {
 
               <div className="mt-8 flex flex-col items-center lg:items-start">
                 <p className="text-accent-foreground/70 text-lg">
-                  De <span className="line-through">R$59,00</span> por apenas:
+                  De <span className="line-through">R$43,99</span> por apenas:
                 </p>
                 <p className="font-headline text-5xl sm:text-6xl font-extrabold text-primary">
-                  R$17,90
+                  R$12,99
                 </p>
                 <p className="text-accent-foreground/70 mt-1">
-                  ou 3x de R$5,97
+                 
                 </p>
               </div>
             </div>
@@ -127,7 +127,7 @@ export function PricingSection() {
                 </a>
               </Button>
               <p className="text-xs text-muted-foreground mt-4 text-center">
-                Compra segura. Garantia de 7 dias.
+                Compra segura. Garantia de 30 dias.
               </p>
             </div>
           </div>
