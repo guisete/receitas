@@ -1,4 +1,3 @@
-
 "use client";
 
 import { ShoppingCart, X } from "lucide-react";
@@ -22,17 +21,19 @@ export function LiveSalesNotification({
   return (
     <div
       className={cn(
-        "fixed bottom-5 left-5 z-50 flex items-center gap-4 rounded-xl border bg-card p-4 shadow-lg transition-all duration-500",
+        "fixed bottom-5 left-5 z-50 flex items-center gap-3 rounded-lg border bg-background/80 p-3 shadow-xl backdrop-blur-sm transition-all duration-500",
         "animate-in fade-in slide-in-from-bottom-5"
       )}
     >
-      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10">
-        <ShoppingCart className="h-6 w-6 text-primary" />
+      <div className="flex h-9 w-9 items-center justify-center rounded-full bg-primary/10">
+        <ShoppingCart className="h-5 w-5 text-primary" />
       </div>
-      <p className="text-sm font-medium text-card-foreground">{message}</p>
+      <div className="flex-grow">
+        <p className="text-sm font-medium text-foreground">{message}</p>
+      </div>
       <button
         onClick={onClose}
-        className="absolute -right-2 -top-2 rounded-full bg-card p-1 text-muted-foreground shadow-md hover:bg-muted"
+        className="rounded-full p-1 text-muted-foreground opacity-70 transition-opacity hover:opacity-100"
         aria-label="Fechar notificação"
       >
         <X className="h-4 w-4" />

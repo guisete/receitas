@@ -9,9 +9,7 @@ const names = [
 ];
 
 const messages = [
-  (name: string) => `${name} acabou de comprar!`,
-  (name: string) => `${name} garantiu sua vaga.`,
-  (name: string) => `Mais uma cliente feliz! Bem-vinda, ${name}!`,
+  (name: string) => `${name} adquiriu as receitas!`,
 ];
 
 const getRandomElement = <T,>(arr: T[]): T => arr[Math.floor(Math.random() * arr.length)];
