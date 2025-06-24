@@ -6,13 +6,13 @@ export function Logo() {
     <div className="flex items-center gap-3">
       <Image
         src="https://i.imgur.com/yfUdrmT.png"
-        alt="Ana Receitas Logo"
+        alt="Leticia Receitas Logo"
         width={48}
         height={48}
         className="h-12 w-12"
       />
       <span className="text-3xl font-extrabold tracking-tight text-foreground font-headline">
-        Ana <span className="text-primary">Receitas</span>
+        Leticia <span className="text-primary">Receitas</span>
       </span>
     </div>
   );

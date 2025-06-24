@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Ana Receitas - Transforme seu Corpo e sua Vida",
+  title: "Leticia Receitas - Transforme seu Corpo e sua Vida",
   description: "A receita definitiva para o emagrecimento saudável e prazeroso.",
 };
 

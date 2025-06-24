@@ -9,7 +9,7 @@ export function LandingFooter() {
           <Logo />
         </div>
         <p className="text-sm">
-          &copy; {new Date().getFullYear()} Ana Receitas. Todos os direitos reservados.
+          &copy; {new Date().getFullYear()} Leticia Receitas. Todos os direitos reservados.
         </p>
       </div>
     </footer>

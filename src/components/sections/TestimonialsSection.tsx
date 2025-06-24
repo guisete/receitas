@@ -6,21 +6,21 @@ const testimonials = [
     name: "Maria S.",
     title: "Nunca me senti tão bem!",
     quote:
-      "Eu não acreditava que poderia emagrecer comendo bem, mas o Ana Receitas mudou tudo! Perdi 8kg em um mês e nunca me senti tão bem. As receitas são incríveis!",
+      "Eu não acreditava que poderia emagrecer comendo bem, mas as receitas da Leticia mudaram tudo! Perdi 8kg em um mês e nunca me senti tão bem. As receitas são incríveis!",
     proofImage: "https://i.imgur.com/kLGSUip.png",
   },
   {
     name: "Juliana P.",
     title: "Simplesmente funciona",
     quote:
-      "Estava cansada de dietas que não davam resultado. O Ana Receitas é diferente. É prático, as comidas são deliciosas e os resultados apareceram rápido. Recomendo demais!",
+      "Estava cansada de dietas que não davam resultado. As receitas da Leticia são diferentes. É prático, as comidas são deliciosas e os resultados apareceram rápido. Recomendo demais!",
     proofImage: "https://i.imgur.com/KESN1aI.png",
   },
   {
     name: "Carla F.",
     title: "A melhor decisão que tomei",
     quote:
-      "Com a rotina corrida, eu precisava de algo fácil de seguir. O Ana Receitas se encaixou perfeitamente. Perdi a barriga que tanto me incomodava e ganhei muita disposição.",
+      "Com a rotina corrida, eu precisava de algo fácil de seguir.Perdi a barriga que tanto me incomodava e ganhei muita disposição.",
     proofImage: "https://i.imgur.com/B1YwxRF.png",
   },
 ];
@@ -34,7 +34,7 @@ export function TestimonialsSection() {
             Milhares de Mulheres Já Transformaram Suas Vidas
           </h2>
           <p className="mt-4 text-lg text-accent-foreground/80">
-            Veja o que algumas de nossas clientes estão dizendo sobre a experiência com o Ana Receitas.
+            Veja o que algumas de nossas clientes estão dizendo sobre a experiência com as minhas receitas
           </p>
         </div>
         <div className="mt-12 grid gap-8 md:grid-cols-1 lg:grid-cols-3">
