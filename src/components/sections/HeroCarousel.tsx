@@ -14,9 +14,9 @@ import {
 import { Card, CardContent } from "@/components/ui/card"
 
 const images = [
-  { src: "https://i.imgur.com/65ITLTz.jpeg", alt: "Mulher medindo a cintura com fita métrica", hint: "woman measuring" },
-  { src: "https://i.imgur.com/fdABaTB.jpeg", alt: "Comparação antes e depois de emagrecimento", hint: "before after" },
-  { src: "https://i.imgur.com/0TPrdCw.jpeg", alt: "Prato com salmão e vegetais", hint: "healthy meal" },
+  { src: "https://i.imgur.com/JKU6Bb2.jpeg", alt: "Prato de comida saudável", hint: "healthy food" },
+  { src: "https://i.imgur.com/CZvMQnv.jpeg", alt: "Salmão com vegetais", hint: "healthy meal" },
+  { src: "https://i.imgur.com/9e9JVDE.jpeg", alt: "Mulher feliz com corpo saudável", hint: "healthy woman" },
 ]
 
 export function HeroCarousel() {

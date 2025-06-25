@@ -81,10 +81,10 @@ export function PricingSection() {
 
               <div className="mt-8 flex flex-col items-center lg:items-start">
                 <p className="text-accent-foreground/70 text-lg">
-                  De <span className="line-through">R$43,99</span> por apenas:
+                  De <span className="line-through">R$33,30</span> por apenas:
                 </p>
                 <p className="font-headline text-5xl sm:text-6xl font-extrabold text-primary">
-                  R$12,99
+                  R$9,99
                 </p>
                 <p className="text-accent-foreground/70 mt-1">
                  
