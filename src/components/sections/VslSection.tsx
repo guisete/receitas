@@ -12,7 +12,7 @@ export function VslSection() {
         </div>
         <div className="relative w-full max-w-sm mx-auto rounded-xl overflow-hidden shadow-2xl aspect-[9/16] bg-muted border border-border">
           <iframe
-            src="https://player.vimeo.com/video/1096389456?h=2ffffc8cde&autoplay=1&loop=1&muted=1&title=0&byline=0&portrait=0&background=1"
+            src="https://player.vimeo.com/video/1096389456?h=2ffffc8cde&title=0&byline=0&portrait=0"
             className="absolute top-0 left-0 w-full h-full"
             frameBorder="0"
             allow="autoplay; fullscreen; picture-in-picture"
