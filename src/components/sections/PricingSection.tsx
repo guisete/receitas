@@ -16,6 +16,7 @@ const includedFeatures = [
 ];
 
 export function PricingSection() {
+  const [isClient, setIsClient] = useState(false);
   const [timeLeft, setTimeLeft] = useState({
     hours: 2,
     minutes: 30,
@@ -23,6 +24,8 @@ export function PricingSection() {
   });
 
   useEffect(() => {
+    setIsClient(true);
+    
     const timer = setInterval(() => {
       setTimeLeft((prevTime) => {
         const totalSeconds =
@@ -116,19 +119,23 @@ export function PricingSection() {
                   </li>
                 ))}
               </ul>
-              <Button
-                asChild
-                size="lg"
-                className="w-full mt-8 font-extrabold text-lg py-7 h-auto whitespace-normal"
-              >
-                <a href="https://go.disruptybr.shop/mi8wzkocpw">
-                  SIM, QUERO ACESSO IMEDIATO!
-                  <ArrowRight className="ml-2 h-6 w-6" />
-                </a>
-              </Button>
-              <p className="text-xs text-muted-foreground mt-4 text-center">
-                Compra segura. Garantia de 30 dias.
-              </p>
+              {isClient && (
+                <>
+                  <Button
+                    asChild
+                    size="lg"
+                    className="w-full mt-8 font-extrabold text-lg py-7 h-auto whitespace-normal"
+                  >
+                    <a href="https://go.disruptybr.shop/mi8wzkocpw">
+                      SIM, QUERO ACESSO IMEDIATO!
+                      <ArrowRight className="ml-2 h-6 w-6" />
+                    </a>
+                  </Button>
+                  <p className="text-xs text-muted-foreground mt-4 text-center">
+                    Compra segura. Garantia de 30 dias.
+                  </p>
+                </>
+              )}
             </div>
           </div>
         </div>
