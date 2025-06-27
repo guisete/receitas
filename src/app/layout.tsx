@@ -22,6 +22,13 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700;800&display=swap"
           rel="stylesheet"
         />
+        <script
+          src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+          data-utmify-prevent-xcod-sck
+          data-utmify-prevent-subids
+          async
+          defer
+        ></script>
       </head>
       <body className={cn("bg-background font-body text-foreground antialiased")}>
         {children}
