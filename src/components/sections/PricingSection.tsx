@@ -121,7 +121,7 @@ export function PricingSection() {
                 size="lg"
                 className="w-full mt-8 font-extrabold text-lg py-7 h-auto whitespace-normal"
               >
-                <a href="#">
+                <a href="https://go.disruptybr.shop/mi8wzkocpw">
                   SIM, QUERO ACESSO IMEDIATO!
                   <ArrowRight className="ml-2 h-6 w-6" />
                 </a>
