@@ -50,6 +50,12 @@ export function PricingSection() {
 
   const formatTime = (time: number) => time.toString().padStart(2, "0");
 
+  const handleInitiateCheckout = () => {
+    if (typeof window['fbq'] === 'function') {
+      window['fbq']('track', 'InitiateCheckout');
+    }
+  };
+
   return (
     <section id="oferta" className="py-16 sm:py-24 bg-white">
       <div className="container mx-auto px-4">
@@ -126,7 +132,10 @@ export function PricingSection() {
                     size="lg"
                     className="w-full mt-8 font-extrabold text-lg py-7 h-auto whitespace-normal"
                   >
-                    <a href="https://go.disruptybr.shop/mi8wzkocpw">
+                    <a
+                      href="https://go.disruptybr.shop/mi8wzkocpw"
+                      onClick={handleInitiateCheckout}
+                    >
                       SIM, QUERO ACESSO IMEDIATO!
                       <ArrowRight className="ml-2 h-6 w-6" />
                     </a>
